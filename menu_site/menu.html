@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="menu_stylesheet.css" /> 
+    <title>Movie-dle Game Menu</title>
+    <script src = "../game_site/test.js"></script>
+</head>
+<body>
+    <h1>Choose a Genre</h1>
+    <img class="movie_theater_gif" SRC="giphy.gif" alt="gif of movie theater">
+    <button class="Comedy" onclick="navigateToAnotherPage('comedy')">Go to Comedy</button>
+    <button class="Action" onclick="navigateToAnotherPage('action')">Go to Action</button>
+    <button class="Horror" onclick="navigateToAnotherPage('horror')">Go to Horror</button>
+    
+    <script>
+        function navigateToAnotherPage(category) {
+        // Change the URL to the desired destination with the category as a parameter
+        window.location.href = `../game_site/main.html?category=${category}`;
+    }
+    </script>
+</body>
+</html>
